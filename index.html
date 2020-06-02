@@ -21,8 +21,50 @@
 		<script src="js/kendo.timezones.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <style>
+            #/*menu {
+                max-width: 120px;
+                margin: 30px auto;
+                float: left;
+            }*/
+
+            .customer-photo {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-size: 32px 35px;
+                background-position: center center;
+                vertical-align: middle;
+                line-height: 32px;
+                box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+                margin-left: 5px;
+            }
+
+            .customer-name {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 32px;
+                padding-left: 3px;
+            }
+
+            .k-grid-header .k-header {
+                height: 30px;
+            }
+
+            #message {
+                margin-top: 10px;
+            }
+        </style>
     </head>
     <body>
+
+        <script src="./data/contacts.js"></script>
+        <script src="./data/messages.js"></script>
+        <script src="./data/tasks.js"></script>
+        <script src="./data/users.js"></script>
+
         <div id="example">
              <div class="demo-section k-content">
                  <div id="tabstrip">
@@ -42,14 +84,15 @@
                              <ul id="menu">
                                  <li category="inbox">Inbox</li>
                                  <li category="important">Important</li>
-                                 <li category="perso">perso</li>
-                                 <li category="outbox">outbox</li>
+                                 <li category="perso">Perso</li>
+                                 <li category="outbox">Outbox</li>
                              </ul>
                              <div id="gridmail"></div>
                              <div id="message">
                                  Select a message to display
                              </div>
                          </div>
+                         
                      </div>
                      <div>
                          <div id="scheduler"></div>
@@ -64,20 +107,20 @@
 
             <script>
                 $(document).ready(function() {
-					//tabulation top page
-					$("#tabstrip").kendoTabStrip({
-                        animation:  {
-                            open: {
-                                effects: "fadeIn"
-                            }
-						}					
-                    });
+					// //tabulation top page
+					// $("#tabstrip").kendoTabStrip({
+     //                    animation:  {
+     //                        open: {
+     //                            effects: "fadeIn"
+     //                        }
+					// 	}					
+     //                });
 					
-					//mail tab menu
-                    $("#menu").kendoMenu({
-                        orientation: 'horizontal',
-                        select: onMenuSelect
-                    });
+					// //mail tab menu
+     //                $("#menu").kendoMenu({
+     //                    orientation: 'horizontal',
+     //                    select: onMenuSelect
+     //                });
 		        });
             </script>
         </div>
