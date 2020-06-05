@@ -56,7 +56,75 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.k-grid-header .k-header {
+    height: 25px;
+}
+#message {
+    margin-top: 20px;
+}
+#menu_mn_active {
+    background-color: #F35801
+}
+#listView {
+    padding: 10px 5px;
+    margin-bottom: -1px;
+    min-height: 510px;
+}
+.user {
+    float: left;
+    position: relative;
+    width: 151px;
+    height: 170px;
+    margin: 0 5px;
+    padding: 0;
+}
+.user img {
+    width: 150px;
+    height: 150px;
+}
+.user h3 {
+    margin: 0;
+    padding: 3px 5px 0 0;
+    max-width: 96px;
+    overflow: hidden;
+    line-height: 1.1em;
+    font-size: .9em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #999;
+}
+.user p {
+    visibility: hidden;
+}
+.user:hover p {
+    visibility: visible;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 150px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.75);
+    transition: background .2s linear, color .2s linear;
+    -moz-transition: background .2s linear, color .2s linear;
+    -webkit-transition: background .2s linear, color .2s linear;
+    -o-transition: background .2s linear, color .2s linear;
+}
+.k-listview:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.k-card {
+    width: 500px;
+}
 
 
 
